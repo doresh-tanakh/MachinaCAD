@@ -1,0 +1,12 @@
+MachinaCAD third-party notices
+
+Electron is distributed under the MIT License. See licenses/ELECTRON-LICENSE.txt.
+Electron includes Chromium and other components with their own license terms.
+See licenses/CHROMIUM-LICENSES.html for their bundled notices.
+The project uses electron-builder (MIT) as a build-time dependency. The Windows
+installer is produced using NSIS, which is distributed under the zlib/libpng
+license and other notices associated with its components. Build dependencies
+and their license metadata are recorded in package-lock.json. This notice is not
+a substitute for the individual third-party license terms.
+The DXF indexed color palette in cadstyle.js is derived from ezdxf (MIT).
+See licenses/EZDXF-LICENSE.txt.
