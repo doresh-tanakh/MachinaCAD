@@ -14,3 +14,7 @@
 #snapInfo{color:#bfe7cd;font-weight:700;white-space:nowrap}
 
 #historyModal{position:fixed;inset:0;z-index:15;background:#000b;display:grid;place-items:center}#historyModal[hidden]{display:none}#historyText{max-height:55vh;overflow:auto;white-space:pre-wrap;background:#15221c;color:#d8ebdd;padding:15px;border-radius:7px;font:12px/1.7 monospace}.dialog{max-height:90vh;overflow:auto}
+
+.panel-label button{float:right;color:#bedec9;font-size:18px;line-height:14px}.layer-list{display:grid;gap:5px;max-height:180px;overflow:auto}.layer-row{display:flex;align-items:center;gap:4px;padding:4px;border:1px solid #34463a;border-radius:5px}.layer-row.active{background:#30463a;border-color:#769786}.layer-row .layer-name{flex:1;min-width:0;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px;padding:6px}.layer-row .layer-action{padding:5px;color:#a9c3b3;font-size:11px}.layer-hint{font-size:10px;color:#819489;margin:10px 0 0}.layer-row.off{opacity:.55}
+
+.field select{background:#26322b;color:#e2ebe4;border:1px solid #435047;border-radius:4px;padding:7px;width:110px;font-size:11px}
