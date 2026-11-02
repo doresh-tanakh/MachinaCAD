@@ -1,0 +1,84 @@
+{
+  "format": "MachinaCAD",
+  "version": 23,
+  "name": "pcb-two-pad",
+  "objects": [
+    {
+      "type": "rect",
+      "a": {
+        "x": 0,
+        "y": 0
+      },
+      "b": {
+        "x": 40,
+        "y": 30
+      },
+      "layer": "0",
+      "pcb": {
+        "kind": "board"
+      }
+    },
+    {
+      "type": "circle",
+      "a": {
+        "x": 10,
+        "y": 15
+      },
+      "b": {
+        "x": 11,
+        "y": 15
+      },
+      "layer": "0",
+      "pcb": {
+        "kind": "pad",
+        "net": "NET1",
+        "side": "through",
+        "drill": 1
+      }
+    },
+    {
+      "type": "circle",
+      "a": {
+        "x": 30,
+        "y": 15
+      },
+      "b": {
+        "x": 31,
+        "y": 15
+      },
+      "layer": "0",
+      "pcb": {
+        "kind": "pad",
+        "net": "NET1",
+        "side": "through",
+        "drill": 1
+      }
+    },
+    {
+      "type": "line",
+      "a": {
+        "x": 10,
+        "y": 15
+      },
+      "b": {
+        "x": 30,
+        "y": 15
+      },
+      "layer": "0",
+      "pcb": {
+        "kind": "trace",
+        "net": "NET1",
+        "side": "top",
+        "width": 0.4
+      }
+    }
+  ],
+  "layers": [
+    {
+      "name": "0",
+      "visible": true,
+      "locked": false
+    }
+  ],
+  "activeLayer": "0"
+}
