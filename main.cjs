@@ -2,7 +2,7 @@
 const { app, BrowserWindow, shell } = require('electron');
 const path = require('node:path');
 function createWindow() {
-  const win = new BrowserWindow({width: 1440, height: 920, minWidth: 760, minHeight: 560, backgroundColor: '#141d19', title: 'MachinaCAD', webPreferences: {contextIsolation: true, nodeIntegration: false, sandbox: true}});
+  const win = new BrowserWindow({width: 1440, height: 920, minWidth: 760, minHeight: 560, backgroundColor: '#141d19', title: 'OlplotCAD', webPreferences: {contextIsolation: true, nodeIntegration: false, sandbox: true}});
   win.loadFile(path.join(__dirname, 'index.html'));
   win.webContents.setWindowOpenHandler(({url}) => { if (url.startsWith('https://')) shell.openExternal(url); return {action:'deny'}; });
 }

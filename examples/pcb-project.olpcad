@@ -1,0 +1,267 @@
+{
+  "format": "OlplotCAD",
+  "version": 25,
+  "editorKind": "pcb",
+  "name": "RC PCB 미배선",
+  "objects": [
+    {
+      "type": "rect",
+      "a": {
+        "x": 90,
+        "y": 0
+      },
+      "b": {
+        "x": 170,
+        "y": 60
+      },
+      "layer": "0",
+      "pcb": {
+        "kind": "board"
+      }
+    },
+    {
+      "type": "block",
+      "name": "PCB-V1",
+      "a": {
+        "x": 105.19,
+        "y": 29
+      },
+      "b": {
+        "x": 124.19,
+        "y": 36
+      },
+      "layer": "0",
+      "children": [
+        {
+          "type": "circle",
+          "a": {
+            "x": 106.19,
+            "y": 30
+          },
+          "b": {
+            "x": 107.19,
+            "y": 30
+          },
+          "layer": "0",
+          "pcb": {
+            "kind": "pad",
+            "net": "SCHEM:n1",
+            "side": "through",
+            "drill": 1,
+            "ref": "V1",
+            "pin": 1
+          }
+        },
+        {
+          "type": "circle",
+          "a": {
+            "x": 113.81,
+            "y": 30
+          },
+          "b": {
+            "x": 114.81,
+            "y": 30
+          },
+          "layer": "0",
+          "pcb": {
+            "kind": "pad",
+            "net": "SCHEM:0",
+            "side": "through",
+            "drill": 1,
+            "ref": "V1",
+            "pin": 2
+          }
+        },
+        {
+          "type": "text",
+          "a": {
+            "x": 106.19,
+            "y": 33
+          },
+          "b": {
+            "x": 124.19,
+            "y": 36
+          },
+          "height": 3,
+          "value": "V1 · 1 / 2",
+          "rotation": 0,
+          "layer": "0"
+        }
+      ]
+    },
+    {
+      "type": "block",
+      "name": "PCB-R1",
+      "a": {
+        "x": 125.19,
+        "y": 29
+      },
+      "b": {
+        "x": 144.19,
+        "y": 36
+      },
+      "layer": "0",
+      "children": [
+        {
+          "type": "circle",
+          "a": {
+            "x": 126.19,
+            "y": 30
+          },
+          "b": {
+            "x": 127.19,
+            "y": 30
+          },
+          "layer": "0",
+          "pcb": {
+            "kind": "pad",
+            "net": "SCHEM:n1",
+            "side": "through",
+            "drill": 1,
+            "ref": "R1",
+            "pin": 1
+          }
+        },
+        {
+          "type": "circle",
+          "a": {
+            "x": 133.81,
+            "y": 30
+          },
+          "b": {
+            "x": 134.81,
+            "y": 30
+          },
+          "layer": "0",
+          "pcb": {
+            "kind": "pad",
+            "net": "SCHEM:n2",
+            "side": "through",
+            "drill": 1,
+            "ref": "R1",
+            "pin": 2
+          }
+        },
+        {
+          "type": "text",
+          "a": {
+            "x": 126.19,
+            "y": 33
+          },
+          "b": {
+            "x": 144.19,
+            "y": 36
+          },
+          "height": 3,
+          "value": "R1 · 1 / 2",
+          "rotation": 0,
+          "layer": "0"
+        }
+      ]
+    },
+    {
+      "type": "block",
+      "name": "PCB-C1",
+      "a": {
+        "x": 145.19,
+        "y": 29
+      },
+      "b": {
+        "x": 164.19,
+        "y": 36
+      },
+      "layer": "0",
+      "children": [
+        {
+          "type": "circle",
+          "a": {
+            "x": 146.19,
+            "y": 30
+          },
+          "b": {
+            "x": 147.19,
+            "y": 30
+          },
+          "layer": "0",
+          "pcb": {
+            "kind": "pad",
+            "net": "SCHEM:n2",
+            "side": "through",
+            "drill": 1,
+            "ref": "C1",
+            "pin": 1
+          }
+        },
+        {
+          "type": "circle",
+          "a": {
+            "x": 153.81,
+            "y": 30
+          },
+          "b": {
+            "x": 154.81,
+            "y": 30
+          },
+          "layer": "0",
+          "pcb": {
+            "kind": "pad",
+            "net": "SCHEM:0",
+            "side": "through",
+            "drill": 1,
+            "ref": "C1",
+            "pin": 2
+          }
+        },
+        {
+          "type": "text",
+          "a": {
+            "x": 146.19,
+            "y": 33
+          },
+          "b": {
+            "x": 164.19,
+            "y": 36
+          },
+          "height": 3,
+          "value": "C1 · 1 / 2",
+          "rotation": 0,
+          "layer": "0"
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "name": "0",
+      "visible": true,
+      "locked": false
+    }
+  ],
+  "activeLayer": "0",
+  "schematicTopology": [
+    {
+      "ref": "V1",
+      "kind": "V",
+      "pins": [
+        "n1",
+        "0"
+      ]
+    },
+    {
+      "ref": "R1",
+      "kind": "R",
+      "pins": [
+        "n1",
+        "n2"
+      ]
+    },
+    {
+      "ref": "C1",
+      "kind": "C",
+      "pins": [
+        "n2",
+        "0"
+      ]
+    }
+  ]
+}

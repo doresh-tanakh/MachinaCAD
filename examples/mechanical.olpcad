@@ -1,0 +1,65 @@
+{
+  "format": "OlplotCAD",
+  "version": 25,
+  "editorKind": "mechanical",
+  "name": "기계제도 예제",
+  "objects": [
+    {
+      "type": "rect",
+      "a": {
+        "x": 0,
+        "y": 0
+      },
+      "b": {
+        "x": 100,
+        "y": 60
+      },
+      "layer": "0"
+    },
+    {
+      "type": "circle",
+      "a": {
+        "x": 25,
+        "y": 30
+      },
+      "b": {
+        "x": 35,
+        "y": 30
+      },
+      "layer": "0"
+    },
+    {
+      "type": "circle",
+      "a": {
+        "x": 75,
+        "y": 30
+      },
+      "b": {
+        "x": 85,
+        "y": 30
+      },
+      "layer": "0"
+    },
+    {
+      "type": "dimension",
+      "a": {
+        "x": 0,
+        "y": 0
+      },
+      "b": {
+        "x": 100,
+        "y": 0
+      },
+      "offset": -12,
+      "layer": "0"
+    }
+  ],
+  "layers": [
+    {
+      "name": "0",
+      "visible": true,
+      "locked": false
+    }
+  ],
+  "activeLayer": "0"
+}
