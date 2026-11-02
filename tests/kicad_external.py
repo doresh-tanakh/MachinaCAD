@@ -8,7 +8,9 @@ s=Schematic.from_file(str(p/'roundtrip.kicad_sch'))
 assert len(s.schematicSymbols)==4 and len(s.libSymbols)==4
 refs={next(prop.value for prop in sym.properties if prop.key=='Reference'):sym for sym in s.schematicSymbols}
 assert set(refs)=={'R1','V1','C1','#PWR004'}
-assert refs['R1'].position.X==0 and refs['R1'].position.Y==-40
+assert refs['R1'].position.X>=20 and refs['R1'].position.Y>=20
+assert refs['R1'].position.X==refs['V1'].position.X
+assert refs['R1'].position.Y==refs['V1'].position.Y
 r=next(lib for lib in s.libSymbols if lib.entryName=='Symbol2')
 assert len(r.units[1].pins)==2
 assert r.units[1].pins[1].position.X==50

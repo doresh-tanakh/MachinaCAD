@@ -1,4 +1,4 @@
-MachinaCAD third-party notices
+OlplotCAD third-party notices
 
 Electron is distributed under the MIT License. See licenses/ELECTRON-LICENSE.txt.
 Electron includes Chromium and other components with their own license terms.
@@ -10,3 +10,7 @@ and their license metadata are recorded in package-lock.json. This notice is not
 a substitute for the individual third-party license terms.
 The DXF indexed color palette in cadstyle.js is derived from ezdxf (MIT).
 See licenses/EZDXF-LICENSE.txt.
+
+Clipper 6.4.2 (vendor/clipper.js), by Angus Johnson, JavaScript port by Timo,
+is distributed under the Boost Software License 1.0. The original source
+notices are retained; see licenses/CLIPPER-BOOST-LICENSE.txt.

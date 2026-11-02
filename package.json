@@ -1,6 +1,6 @@
 {
   "name": "olplotcad",
-  "version": "0.2.25",
+  "version": "0.2.26",
   "description": "OlplotCAD 2D CAD and electronic design editors",
   "main": "main.cjs",
   "author": "OlplotCAD contributors",
@@ -13,8 +13,8 @@
     "build:mac:x64": "electron-builder --mac pkg --x64"
   },
   "devDependencies": {
-    "electron": "^38.0.0",
-    "electron-builder": "^26.0.12"
+    "electron": "38.8.6",
+    "electron-builder": "26.18.0"
   },
   "build": {
     "appId": "com.olplotcad.desktop",
@@ -51,7 +51,10 @@
       "editor-policy.js",
       "editors.js",
       "spice.js",
-      "kicad.js"
+      "kicad.js",
+      "vendor/clipper.js",
+      "copper.js",
+      "zones.js"
     ],
     "mac": {
       "target": [
