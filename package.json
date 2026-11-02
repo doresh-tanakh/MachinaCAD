@@ -1,9 +1,9 @@
 {
-  "name": "machinacad",
-  "version": "0.2.24",
-  "description": "MachinaCAD 2D CAD prototype",
+  "name": "olplotcad",
+  "version": "0.2.25",
+  "description": "OlplotCAD 2D CAD and electronic design editors",
   "main": "main.cjs",
-  "author": "MachinaCAD",
+  "author": "OlplotCAD contributors",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
@@ -17,8 +17,8 @@
     "electron-builder": "^26.0.12"
   },
   "build": {
-    "appId": "com.machinacad.desktop",
-    "productName": "MachinaCAD",
+    "appId": "com.olplotcad.desktop",
+    "productName": "OlplotCAD",
     "directories": {
       "output": "release"
     },
@@ -47,7 +47,11 @@
       "fabrication.js",
       "ac.js",
       "walls.js",
-      "boardlink.js"
+      "boardlink.js",
+      "editor-policy.js",
+      "editors.js",
+      "spice.js",
+      "kicad.js"
     ],
     "mac": {
       "target": [
