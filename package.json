@@ -1,0 +1,70 @@
+{
+  "name": "machinacad",
+  "version": "0.2.24",
+  "description": "MachinaCAD 2D CAD prototype",
+  "main": "main.cjs",
+  "author": "MachinaCAD",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build:mac": "electron-builder --mac pkg",
+    "build:win": "electron-builder --win nsis --x64",
+    "build:mac:arm64": "electron-builder --mac pkg --arm64",
+    "build:mac:x64": "electron-builder --mac pkg --x64"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.machinacad.desktop",
+    "productName": "MachinaCAD",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "index.html",
+      "app.js",
+      "style.css",
+      "logo.svg",
+      "main.cjs",
+      "dxf.js",
+      "symbols.js",
+      "circuit.js",
+      "LICENSE",
+      "THIRD_PARTY_NOTICES.txt",
+      "licenses/**/*",
+      "spline.js",
+      "polyline.js",
+      "mtext.js",
+      "hatch.js",
+      "cadstyle.js",
+      "hatchcurve.js",
+      "angular.js",
+      "schematic.js",
+      "architecture.js",
+      "pcb.js",
+      "fabrication.js",
+      "ac.js",
+      "walls.js",
+      "boardlink.js"
+    ],
+    "mac": {
+      "target": [
+        "pkg"
+      ],
+      "category": "public.app-category.productivity",
+      "icon": "icon.png"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
